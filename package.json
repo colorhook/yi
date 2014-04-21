@@ -1,0 +1,42 @@
+{
+    "name": "yi",
+    "version": "1.0.0",
+	"description": "code transformer",
+    "keywords": ["yi", "convert js to other code"],
+    "main": "lib/yi.js",
+    "engines": {
+        "node" : ">=0.10.0"
+    },
+	"author": "colorhook <colorhook@gmail.com>",
+	"maintainers": [{
+      "name": "colorhook",
+      "email": "colorhook@gmail.com",
+      "url": "http://github.com/colorhook"
+    }],
+	"bugs": {
+        "email": "colorhook@gmail.com",
+        "url": "http://github.com/colorhook/yi/issues"
+    },
+
+    "dependencies": {
+    	"uglify-js": "~2.4.13"
+    },
+    "devDependencies":{
+        "mocha": "~1.7.4",
+        "should": "~1.2.2"
+    },
+    "scripts":{
+        "test": "mocha --require should test test/builtins --timeout 10000 --globals hasCert --ignore-leaks"
+    },
+    "homepage": "https://github.com/colorhook/yi",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/colorhook/yi.git"
+    },
+	"licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/colorhook/yi/blob/master/LICENSE"
+        }
+    ]
+}
